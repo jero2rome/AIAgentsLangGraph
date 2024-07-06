@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Jerome Mohanan <2962518+jero2rome@users.noreply.github.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -12,6 +13,7 @@ langchain-community = "^0.2.4"
 langchain-anthropic = "^0.1.15"
 python-dotenv = "^1.0.1"
 langchain-openai = "^0.1.8"
+asyncio = "^3.4.3"
 
 
 [build-system]
