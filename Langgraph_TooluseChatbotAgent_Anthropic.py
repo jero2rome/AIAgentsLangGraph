@@ -25,7 +25,9 @@ langsmithApiKey = os.getenv("LANGSMITH_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = "LangGraph Tutorial"
 
-llm = ChatAnthropic(model="claude-3-haiku-20240307")
+# llm = ChatAnthropic(model="claude-3-haiku-20240307")
+
+llm = ChatOpenAI(model="gpt-4o")
 
 tool = TavilySearchResults(max_results=2)
 tools = [tool]
